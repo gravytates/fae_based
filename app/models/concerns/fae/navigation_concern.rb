@@ -24,11 +24,17 @@ module Fae
     # end
 
     def structure
+
       [
-        item('Article Categories', path: admin_article_categories_path),
-        item('Articles', path: admin_articles_path),
-        # scaffold inject marker
+        item('News', subitems: [
+          item('Articles', path: admin_articles_path),
+          item('Article Categories', path: admin_article_categories_path),
+        ]),
+        item('Pages', subitems: [
+          item('About Me', path: fae.edit_content_block_path('about_me'))
+        ])
       ]
+
     end
 
   end

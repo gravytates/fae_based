@@ -4,3 +4,7 @@
 #   expose Model1, :attr
 #   expose Model2, :attr1, :attr2
 # end
+
+Judge.configure do
+  expose Article, :slug
+end
