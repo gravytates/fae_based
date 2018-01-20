@@ -12,6 +12,5 @@ class Article < ApplicationRecord
 
   has_fae_image :hero_image
 
-
   belongs_to :article_category
 end
