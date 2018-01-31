@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   # mount Fae below your admin namespec
   mount Fae::Engine => '/admin'
 
+  root to: 'articles#index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
