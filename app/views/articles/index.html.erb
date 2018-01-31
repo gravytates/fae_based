@@ -4,14 +4,14 @@
 <p>Here are all the articles!</p>
 <hr/>
 
-<% @articles.each do |a|%>
-  <p><%= a.title %></p>
-  <p><%= a.date %></p>
-  <p><%= a.introduction %></p>
-  <p><%= a.body %></p>
-  <p>Category id: <%= @article_categories.find(a.article_category_id)['name'] %></p>
-  <img src="<%= a.hero_image.asset %>" alt="<%= a.hero_image.alt%>">
-  <hr/>
-
-
-<% end %>
+<div class="articles">
+  <% @articles.each do |a|%>
+    <p class='article-title'><%= a.title %></p>
+    <p class='article-date'><%= a.date %></p>
+    <p><%= a.introduction %></p>
+    <p><%= a.body %></p>
+    <p>Category id: <%= @article_categories.find(a.article_category_id)['name'] %></p>
+    <img class='article-image' src="<%= a.hero_image.asset %>" alt="<%= a.hero_image.alt%>">
+    <hr/>
+  <% end %>
+</div>

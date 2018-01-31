@@ -1,2 +1,27 @@
 // Do Not Delete this page! FAE depends on it in order to set its highlight color.
 // $c-custom-highlight: #9aa142;
+
+body {
+  background-color: #f9f9f9;
+}
+
+.articles {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 2% 2% 0 2%;
+  background-color: lightblue;
+}
+
+.article-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.article-date {
+  text-align: center;
+}
+
+.article-image {
+  display: block;
+  margin: auto;
+}
