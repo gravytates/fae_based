@@ -9,7 +9,8 @@
   <p><%= a.date %></p>
   <p><%= a.introduction %></p>
   <p><%= a.body %></p>
-  <p>Category id: <%= a.article_category_id %></p>
+  <p>Category id: <%= @article_categories.find(a.article_category_id)['name'] %></p>
+  <img src="<%= a.hero_image.asset %>" alt="<%= a.hero_image.alt%>">
   <hr/>
 
 
