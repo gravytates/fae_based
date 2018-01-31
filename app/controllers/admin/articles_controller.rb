@@ -5,7 +5,7 @@ module Admin
 
     def build_assets
       @item.build_hero_image if @item.hero_image.blank?
-      @item.build_pdf if @item.pdf.blank?
+      @item.build_pdf if @item.pdf.blank? 
     end
 
   end
