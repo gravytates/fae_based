@@ -1,2 +1,16 @@
 <h2>This is the home page for Fae-Based!</h2>
 <p>Hope it looks okay...</p>
+
+<p>Here are all the articles!</p>
+<hr/>
+
+<% @articles.each do |a|%>
+  <p><%= a.title %></p>
+  <p><%= a.date %></p>
+  <p><%= a.introduction %></p>
+  <p><%= a.body %></p>
+  <p>Category id: <%= a.article_category_id %></p>
+  <hr/>
+
+
+<% end %>
