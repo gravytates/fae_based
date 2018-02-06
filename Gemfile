@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'fae-rails'
+gem 'webpacker'
+gem 'foreman'
 
 
 group :development, :test do
